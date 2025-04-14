@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import ThemeToggle from './ThemeToggle';
 import Header from './Header';
 import Footer from './Footer';
 import ServiceWorkerRegistration from './ServiceWorkerRegistration';
@@ -52,7 +51,6 @@ export default function ClientLayout({ children }) {
         {children}
       </main>
       <Footer />
-      <ThemeToggle />
       <Analytics />
       <ServiceWorkerRegistration />
       <ScrollToTop />

@@ -88,7 +88,7 @@ export default function Skills() {
                 className={`px-6 py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-300 ${
                   selectedCategory === category
                     ? 'bg-secondary-teal text-white shadow-lg scale-105'
-                    : 'bg-white dark:bg-primary-light text-gray-600 dark:text-gray-300 hover:bg-accent-light dark:hover:bg-accent-dark hover:text-primary-light dark:hover:text-secondary-teal'
+                    : 'border border-secondary-teal text-secondary-teal hover:bg-accent-light px-8 py-3 rounded-lg transition-colors dark:text-secondary-teal dark:border-secondary-teal dark:hover:bg-gray-800'
                 }`}
                 whileHover={{ scale: selectedCategory === category ? 1.05 : 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -108,7 +108,7 @@ export default function Skills() {
                 transition={{ delay: index * 0.1 }}
                 onHoverStart={() => setHoveredSkill(skill.name)}
                 onHoverEnd={() => setHoveredSkill(null)}
-                className="relative bg-white dark:bg-primary-light rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+                className="relative bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
               >
                 <div className="mb-4">
                   <h3 className="text-lg sm:text-xl font-semibold text-primary-navy dark:text-white mb-2">

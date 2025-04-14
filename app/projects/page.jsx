@@ -89,7 +89,7 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }}
-                className="bg-gray-50 dark:bg-primary-light rounded-lg overflow-hidden shadow-lg"
+                className="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg"
               >
                 <div className="relative h-48">
                   <Image

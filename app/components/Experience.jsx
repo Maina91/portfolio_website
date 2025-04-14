@@ -108,7 +108,7 @@ export default function Experience() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="p-8 bg-white dark:bg-primary-light rounded-xl shadow-lg"
+                className="p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg"
               >
                 <div className="border-l-4 border-secondary-teal pl-6 mb-6">
                   <h3 className="text-2xl font-bold text-primary-navy dark:text-white mb-2">

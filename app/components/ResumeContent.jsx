@@ -27,7 +27,8 @@ export default function ResumeContent() {
             <Link
               href="/Maina_Edwin_Resume.pdf"
               target="_blank"
-              className="flex items-center gap-3 bg-secondary-teal hover:bg-secondary-teal/90 text-white px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl group"
+              // className="flex items-center gap-3 bg-secondary-teal hover:bg-secondary-teal/90 text-white px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl group"
+              className="flex items-center gap-3 border border-secondary-teal text-secondary-teal hover:bg-accent-light px-6 py-3 rounded-lg transition-colors dark:text-secondary-teal dark:border-secondary-teal dark:hover:bg-gray-800"
             >
               <Image
                 src="/images/download-icon.png"

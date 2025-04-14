@@ -215,7 +215,7 @@ export default function Home() {
       </motion.section>
 
       {/* Tech Stack Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-800">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-primary-navy">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -417,7 +417,7 @@ export default function Home() {
       </motion.section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-secondary-teal dark:bg-accent-dark">
+      <section className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-primary-navy">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -433,8 +433,8 @@ export default function Home() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-secondary-teal px-8 py-3 rounded-lg transition-colors"
-            >
+              className="border border-secondary-teal text-secondary-teal hover:bg-accent-light px-8 py-3 rounded-lg transition-colors dark:text-secondary-teal dark:border-secondary-teal dark:hover:bg-gray-800"
+              >
               Get in Touch
             </Link>
           </motion.div>
