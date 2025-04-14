@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+* {
+  font-family: outfit;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Improved section scrolling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjusts for fixed header */
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+body {
+  @apply bg-white dark:bg-primary-navy transition-colors duration-300;
+}
+
+/* Smooth transitions for dark mode */
+.transition-theme {
+  @apply transition-all duration-300;
+}
+
+/* Better text readability */
+p {
+  @apply leading-relaxed;
+}
+
+/* Responsive container padding */
+.container {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Animation utilities */
+.fade-in-up {
+  @apply opacity-0 translate-y-4;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.fade-in-down {
+  @apply opacity-0 -translate-y-4;
+  animation: fadeInDown 0.6s ease-out forwards;
+}
+
+.fade-in-left {
+  @apply opacity-0 -translate-x-4;
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.fade-in-right {
+  @apply opacity-0 translate-x-4;
+  animation: fadeInRight 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@keyframes fadeInDown {
+  to {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    @apply opacity-100 translate-x-0;
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    @apply opacity-100 translate-x-0;
+  }
+}
+
+/* Hover animation utilities */
+.hover-lift {
+  @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+.hover-rotate {
+  @apply transition-transform duration-300 hover:rotate-3;
+}
+
+/* Improved focus styles */
+:focus-visible {
+  @apply outline-none ring-2 ring-secondary-teal ring-offset-2 ring-offset-white dark:ring-offset-primary-navy;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-primary-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* Mobile menu backdrop */
+.mobile-menu-backdrop {
+  @apply fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm transition-opacity;
+}
+
+/* Responsive typography */
+h1 {
+  @apply text-4xl sm:text-5xl lg:text-6xl;
+}
+
+h2 {
+  @apply text-3xl sm:text-4xl lg:text-5xl;
+}
+
+h3 {
+  @apply text-2xl sm:text-3xl;
+}
+
+/* Smooth image transitions */
+img {
+  @apply transition-all duration-300;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+/* Card hover effects */
+.hover-card {
+  @apply transition-all duration-300;
+}
+
+.hover-card:hover {
+  @apply -translate-y-1 shadow-lg;
+}
+
+/* Button base styles */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-lg transition-all duration-300 font-medium;
+}
+
+.btn-primary {
+  @apply bg-secondary-teal hover:bg-accent-dark text-white;
+}
+
+.btn-outline {
+  @apply border-2 border-secondary-teal text-secondary-teal hover:bg-accent-light dark:hover:bg-accent-dark hover:text-white;
+}
+
+/* Section transitions */
+.section-animate {
+  @apply opacity-0 translate-y-4 transition-all duration-700;
+}
+
+.section-animate.in-view {
+  @apply opacity-100 translate-y-0;
+}
+
+/* Theme transition utilities */
+.theme-transition {
+  @apply transition-colors duration-300;
+}
+
+/* Prevent theme flash on load */
+.prevent-theme-flash {
+  visibility: hidden;
+}
+
+/* Theme-aware text utilities */
+.text-themed {
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+.text-themed-secondary {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Theme-aware background utilities */
+.bg-themed {
+  @apply bg-white dark:bg-gray-900;
+}
+
+.bg-themed-secondary {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+/* Theme-aware border utilities */
+.border-themed {
+  @apply border-gray-200 dark:border-gray-700;
+}

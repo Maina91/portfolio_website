@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mainaedwin.com/sitemap.xml
+
+# Important pages
+Allow: /skills
+Allow: /about
+Allow: /projects
+Allow: /contact
+Allow: /experience
+
+# Assets
+Allow: /assets/
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.ico$
+
+# Block access to internal paths
+Disallow: /api/
+Disallow: /_next/static/development/
