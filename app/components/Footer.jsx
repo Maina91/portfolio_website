@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { footerLinks, socialLinks } from '../data/footerData';
+import { socialLinks } from '../data/footerData';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -24,28 +24,6 @@ export default function Footer() {
               <p className="text-xs sm:text-sm text-gray-600 dark:text-dark-text-secondary">
                 Full-stack developer specializing in building exceptional digital experiences.
               </p>
-            </motion.div>
-
-            {/* Quick Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="space-y-2 sm:space-y-4"
-            >
-              <h3 className="text-base sm:text-lg font-semibold text-primary-navy dark:text-dark-text-primary">Quick Links</h3>
-              <ul className="space-y-1 sm:space-y-2">
-                {footerLinks.navigation.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="text-xs sm:text-sm text-gray-600 dark:text-dark-text-muted hover:text-secondary-teal dark:hover:text-secondary-teal transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </motion.div>
 
             {/* Connect */}

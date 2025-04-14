@@ -104,7 +104,7 @@ export default function Contact() {
                       },
                       maxLength: { value: 100, message: 'Email cannot exceed 100 characters' }
                     })}
-                    className={`w-full px-4 py-2 border ${errors.email ? 'border-red-500' : 'border-gray-300'} dark:border-gray-600 rounded-md focus:ring-2 focus:ring-secondary-teal dark:bg-gray-700 dark:text-white`}
+                    className={`w-full px-4 py-2 border ${errors.email ? 'border-red-500' : 'border-gray-300'} dark:border-gray-600 rounded-md focus:ring-2 focus:ring-secondary-teal bg-white dark:bg-gray-700 dark:text-white`}
                   />
                   {errors.email && (
                     <span className="text-red-500 text-sm mt-1">{errors.email.message}</span>
@@ -123,7 +123,7 @@ export default function Contact() {
                       minLength: { value: 10, message: 'Message must be at least 10 characters long' },
                       maxLength: { value: 1000, message: 'Message cannot exceed 1000 characters' }
                     })}
-                    className={`w-full px-4 py-2 border ${errors.message ? 'border-red-500' : 'border-gray-300'} dark:border-gray-600 rounded-md focus:ring-2 focus:ring-secondary-teal dark:bg-gray-700 dark:text-white`}
+                    className={`w-full px-4 py-2 border ${errors.message ? 'border-red-500' : 'border-gray-300'} dark:border-gray-600 rounded-md focus:ring-2 focus:ring-secondary-teal bg-white dark:bg-gray-700 dark:text-white`}
                   ></textarea>
                   {errors.message && (
                     <span className="text-red-500 text-sm mt-1">{errors.message.message}</span>
