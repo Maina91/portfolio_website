@@ -425,10 +425,10 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="text-center"
           >
-            <h2 className="text-3xl font-bold text-white mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Let&apos;s Work Together
             </h2>
-            <p className="text-gray-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-gray-600 dark:text-gray-100 mb-8 max-w-2xl mx-auto">
               I&apos;m always interested in hearing about new projects and opportunities.
             </p>
             <Link
