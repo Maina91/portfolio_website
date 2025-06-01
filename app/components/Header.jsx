@@ -49,12 +49,6 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/resume"
-              className="px-4 py-2 text-gray-600 dark:text-dark-text-secondary hover:text-secondary-teal dark:hover:text-secondary-teal rounded-lg transition-colors"
-            >
-              Resume
-            </Link>
             <div className="ml-4 flex items-center">
               <ThemeToggle />
             </div>
@@ -115,13 +109,6 @@ export default function Header() {
                     {item.label}
                   </Link>
                 ))}
-                <Link
-                  href="/resume"
-                  className="block px-4 py-2 text-gray-600 dark:text-dark-text-secondary hover:text-secondary-teal dark:hover:text-secondary-teal hover:bg-gray-50 dark:hover:bg-dark-hover transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Resume
-                </Link>
               </div>
             </motion.div>
           )}

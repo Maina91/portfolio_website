@@ -22,9 +22,9 @@ const techStack = [
 
 const skills = {
   backend: ['PHP (Laravel)', 'JavaScript (NodeJs)'],
-  frontend: ['Next.js', 'Blade', 'Bootstrap', 'Tailwind CSS', 'AJAX', 'HTML5', 'CSS3'],
-  databases: ['PostgreSQL', 'MySQL', 'Sequelize'],
-  apiDevelopment: ['REST', 'SOAP', 'GraphQL', 'M-Pesa Integration'],
+  frontend: ['React', 'Next.js', 'Blade', 'Bootstrap', 'Tailwind CSS', 'AJAX', 'HTML5', 'CSS3'],
+  databases: ['PostgreSQL', 'MySQL', 'Sequelize', 'MongoDB'],
+  apiDevelopment: ['REST', 'SOAP', 'GraphQL'],
   devOpsCloud: ['Docker'],
   architectureSecurity: ['System Design', 'Error Management', 'Security Best Practices'],
 };
@@ -38,8 +38,8 @@ const projects = [
     solution: "Built a scalable e-commerce solution with modern tech stack",
     impact: "Helped 10+ small businesses establish online presence",
     techStack: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-    github: "https://github.com/yourusername/project1",
-    live: "https://project1.demo.com"
+    github: "https://github.com/Maina91",
+    live: "https://github.com/Maina91"
   },
   {
     title: "Task Management App",
@@ -49,8 +49,8 @@ const projects = [
     solution: "Created an intuitive task management system",
     impact: "Improved team productivity by 40%",
     techStack: ["React", "Express", "PostgreSQL", "Socket.io"],
-    github: "https://github.com/yourusername/project2",
-    live: "https://project2.demo.com"
+    github: "https://github.com/Maina91",
+    live: "https://github.com/Maina91"
   },
   {
     title: "Healthcare Portal",
@@ -60,8 +60,8 @@ const projects = [
     solution: "Developed a secure healthcare management portal",
     impact: "Reduced administrative work by 60%",
     techStack: ["Vue.js", "Laravel", "MySQL", "AWS"],
-    github: "https://github.com/yourusername/project3",
-    live: "https://project3.demo.com"
+    github: "https://github.com/Maina91",
+    live: "https://github.com/Maina91"
   }
 ];
 
@@ -127,7 +127,7 @@ export default function Home() {
               >
                 <Link
                   href="/contact"
-                  className="bg-secondary-teal hover:bg-accent-dark text-white px-8 py-3 rounded-lg transition-colors"
+                  className="border border-secondary-teal text-secondary-teal hover:bg-accent-light px-8 py-3 rounded-lg transition-colors dark:text-secondary-teal dark:border-secondary-teal dark:hover:bg-gray-800"
                 >
                   Get in Touch
                 </Link>
@@ -136,6 +136,20 @@ export default function Home() {
                   className="border border-secondary-teal text-secondary-teal hover:bg-accent-light px-8 py-3 rounded-lg transition-colors dark:text-secondary-teal dark:border-secondary-teal dark:hover:bg-gray-800"
                 >
                   View Work
+                </Link>
+                <Link
+                  href="/Maina_Edwin_Resume.pdf"
+                  target="_blank"
+                  className="flex items-center gap-3 border border-secondary-teal text-secondary-teal hover:bg-accent-light px-8 py-3 rounded-lg transition-colors dark:text-secondary-teal dark:border-secondary-teal dark:hover:bg-gray-800"
+                >
+                  <Image
+                    src="/images/download-icon.png"
+                    alt="Download"
+                    width={24}
+                    height={24}
+                    className="w-6 h-6 dark:invert transform group-hover:-translate-y-1 transition-transform duration-300"
+                  />
+                  Download Resume
                 </Link>
               </motion.div>
             </motion.div>

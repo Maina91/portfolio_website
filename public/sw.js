@@ -6,7 +6,6 @@ const URLS_TO_CACHE = [
   '/projects',
   '/experience',
   '/contact',
-  '/resume',
   '/assets/logo.webp',
   '/manifest.json',
   '/theme-worker.js',
