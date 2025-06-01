@@ -1,8 +1,8 @@
 import ResumeContent from '../components/ResumeContent';
 
 export const metadata = {
-  title: 'Maina Edwin | Full-Stack Developer',
-  description: 'Full-stack developer specializing in modern web technologies',
+  title: 'Maina Edwin | Full-Stack Software Engineer',
+  description: 'Full-stack software engineer specializing in modern web technologies',
 };
 
 export const viewport = {

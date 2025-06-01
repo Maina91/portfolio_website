@@ -63,10 +63,10 @@ export default function About() {
             
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
-                Full-Stack Software Developer
+                Full-Stack Software Engineer
               </h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a passionate full-stack developer with expertise in backend and frontend development,
+                I'm a passionate full-stack software engineer with expertise in backend and frontend development,
                  specializing in Laravel (PHP), JavaScript, and REST API design and documentation. Skilled
                  in building scalable, high-performance, and secure applications while adhering to best coding
                   practices and agile methodologies. Experienced in optimizing system efficiency, enhancing security, 

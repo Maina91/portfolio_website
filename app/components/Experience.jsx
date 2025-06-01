@@ -8,7 +8,7 @@ export default function Experience() {
 
   const experiences = [
     {
-      title: 'Full-Stack Software Developer',
+      title: 'Full-Stack Software Engineer',
       company: 'Wizglobal Kenya',
       location: 'Parklands, Nairobi',
       date: 'Sep 2024 - Present',

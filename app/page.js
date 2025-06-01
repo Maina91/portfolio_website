@@ -116,8 +116,8 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                A Full-Stack Software Developer specializing in building scalable web applications
-                with modern technologies. Expert in both Laravel and Next.js ecosystems.
+                A Full-Stack Software Engineer specializing in building scalable web applications
+                with modern technologies. Expert in both Laravel (PHP) and JavaScript ecosystems.
               </motion.p>
               <motion.div 
                 className="flex flex-wrap gap-4"

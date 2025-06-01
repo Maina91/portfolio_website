@@ -22,7 +22,7 @@ export default function Footer() {
                 Maina
               </Link>
               <p className="text-xs sm:text-sm text-gray-600 dark:text-dark-text-secondary">
-                Full-stack developer specializing in building exceptional digital experiences.
+                Full-stack software engineer specializing in building exceptional digital experiences.
               </p>
             </motion.div>
 

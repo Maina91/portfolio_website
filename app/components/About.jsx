@@ -104,7 +104,7 @@ export default function About() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="text-lg sm:text-xl leading-relaxed"
                 >
-                  Hello! I'm a Full-Stack Developer passionate about creating innovative digital solutions that make a difference. With expertise in modern web technologies, I bridge the gap between design and functionality.
+                  Hello! I'm a Full-Stack Software Engineer passionate about creating innovative digital solutions that make a difference. With expertise in modern web technologies, I bridge the gap between design and functionality.
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0 }}
