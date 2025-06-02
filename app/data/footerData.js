@@ -1,7 +1,7 @@
 export const socialLinks = [
   {
     name: 'GitHub',
-    url: 'https://github.com/MainaEdwin',
+    url: 'https://github.com/Maina91',
     icon: (
       <svg
         className="w-5 h-5"
@@ -19,7 +19,7 @@ export const socialLinks = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/maina-edwin/',
+    url: 'http://www.linkedin.com/in/edwin-maina-48a189269',
     icon: (
       <svg
         className="w-5 h-5"

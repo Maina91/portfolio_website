@@ -13,7 +13,7 @@ const projects = [
     techStack: ['Laravel', 'Vue.js', 'MySQL', 'WebSockets', 'Docker'],
     image: '/images/work-6.jpg',
     github: 'https://github.com/Maina91',
-    live: 'https://restaurant-pos-demo.com'
+    live: 'https://github.com/Maina91'
   },
   {
     title: 'Customer Relationship Management System',
@@ -23,7 +23,7 @@ const projects = [
     techStack: ['Laravel', 'Node.js', 'PostgreSQL', 'RESTful APIs'],
     image: '/images/work-4.png',
     github: 'https://github.com/Maina91',
-    live: 'https://crm-demo.com'
+    live: 'https://github.com/Maina91'
   },
   {
     title: 'Bulk SMS & Email System',
@@ -33,7 +33,7 @@ const projects = [
     techStack: ['Laravel', 'MySQL', 'Queue Systems', 'API Integration'],
     image: '/images/work-5.jpg',
     github: 'https://github.com/Maina91',
-    live: 'https://bulk-messenger-demo.com'
+    live: 'https://github.com/Maina91'
   },
   {
     title: 'E-Commerce Platform',
@@ -43,7 +43,7 @@ const projects = [
     techStack: ['Next.js', 'Node.js', 'MongoDB', 'Stripe'],
     image: '/images/work-1.png',
     github: 'https://github.com/Maina91',
-    live: 'https://project-1.demo.com'
+    live: 'https://github.com/Maina91'
   },
   {
     title: 'Task Management System',
@@ -53,7 +53,7 @@ const projects = [
     techStack: ['React', 'Express', 'Socket.io', 'PostgreSQL'],
     image: '/images/work-2.png',
     github: 'https://github.com/Maina91',
-    live: 'https://project-2.demo.com'
+    live: 'https://github.com/Maina91'
   },
   {
     title: 'Health Tracking App',
@@ -63,7 +63,7 @@ const projects = [
     techStack: ['React Native', 'Firebase', 'Chart.js', 'Node.js'],
     image: '/images/work-3.png',
     github: 'https://github.com/Maina91',
-    live: 'https://project-3.demo.com'
+    live: 'https://github.com/Maina91'
   }
 ];
 
