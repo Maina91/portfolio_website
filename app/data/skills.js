@@ -1,8 +1,8 @@
 export const skills = {
-  backend: ['PHP (Laravel)', 'Node.js', 'Express', 'RESTful APIs'],
-  frontend: ['React', 'Next.js', 'Tailwind CSS', 'Bootstrap'],
-  databases: ['PostgreSQL', 'MySQL', 'Sequelize'],
-  apiDevelopment: ['REST', 'SOAP', 'GraphQL', 'M-Pesa Integration'],
-  devOpsCloud: ['Docker', 'Linux', 'Git'],
+  backend: ['PHP (Laravel)', 'JavaScript (NodeJs)'],
+  frontend: ['React', 'Next.js', 'Blade', 'Bootstrap', 'Tailwind CSS', 'AJAX', 'HTML5', 'CSS3'],
+  databases: ['PostgreSQL', 'MySQL', 'Sequelize', 'MongoDB'],
+  apiDevelopment: ['REST', 'SOAP', 'GraphQL'],
+  devOpsCloud: ['Docker', 'Linux'],
   architectureSecurity: ['System Design', 'Error Management', 'Security Best Practices']
 };
