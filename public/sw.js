@@ -1,7 +1,6 @@
 const CACHE_NAME = 'maina-portfolio-v1';
 const URLS_TO_CACHE = [
   '/',
-  '/about',
   '/skills',
   '/projects',
   '/experience',

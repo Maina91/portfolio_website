@@ -6,7 +6,6 @@ Sitemap: https://mainaedwin.com/sitemap.xml
 
 # Important pages
 Allow: /skills
-Allow: /about
 Allow: /projects
 Allow: /contact
 Allow: /experience
