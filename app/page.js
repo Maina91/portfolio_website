@@ -147,7 +147,7 @@ export default function Home() {
                     alt="Download"
                     width={24}
                     height={24}
-                    className="w-6 h-6 dark:invert transform group-hover:-translate-y-1 transition-transform duration-300"
+                    className="w-6 h-5 text-secondary-teal [filter:invert(48%)_sepia(91%)_saturate(427%)_hue-rotate(135deg)_brightness(101%)_contrast(101%)] transform group-hover:-translate-y-1 transition-transform duration-300"
                   />
                   Download Resume
                 </Link>
