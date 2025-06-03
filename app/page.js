@@ -236,7 +236,14 @@ export default function Home() {
               }}
               className="grid grid-cols-2 gap-6 relative"
             >
-              {['Frontend', 'Backend', 'UI/UX', 'DevOps'].map((category, index) => (
+              {Object.entries({
+                'Frontend': skills.frontend,
+                'Backend': skills.backend,
+                'Databases': skills.databases,
+                'APIs': skills.apiDevelopment,
+                'DevOps & Cloud': skills.devOpsCloud,
+                'Architecture & Security': skills.architectureSecurity
+              }).map(([category, items], index) => (
                 <motion.div
                   key={category}
                   className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg"
@@ -256,23 +263,30 @@ export default function Home() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
                       </svg>
                     )}
-                    {category === 'UI/UX' && (
-                      <svg className="w-6 h-6 text-secondary-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                      </svg>
-                    )}
-                    {category === 'DevOps' && (
+                    {category === 'Databases' && (
                       <svg className="w-6 h-6 text-secondary-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                      </svg>
+                    )}
+                    {category === 'APIs' && (
+                      <svg className="w-6 h-6 text-secondary-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    )}
+                    {category === 'DevOps & Cloud' && (
+                      <svg className="w-6 h-6 text-secondary-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                    )}
+                    {category === 'Architecture & Security' && (
+                      <svg className="w-6 h-6 text-secondary-teal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                       </svg>
                     )}
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">{category}</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-300">
-                    {category === 'Frontend' && 'React, Next.js, Tailwind CSS'}
-                    {category === 'Backend' && 'Laravel, Node.js, Express'}
-                    {category === 'UI/UX' && 'Responsive Design, Animations'}
-                    {category === 'DevOps' && 'Docker, CI/CD, Git'}
+                    {items.join(', ')}
                   </p>
                 </motion.div>
               ))}
@@ -291,61 +305,6 @@ export default function Home() {
                 style={{ opacity: 1 }}
               />
             </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Skills Section */}
-      <motion.section
-        ref={skillsRef}
-        className="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-primary-navy"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-        <div className="container mx-auto px-4">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Skills & Expertise
-            </h2>
-            <div className="w-20 h-1 bg-secondary-teal mx-auto mb-6"></div>
-            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Technologies and tools I work with
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {Object.entries(skills).map(([category, items], index) => (
-              <motion.div
-                key={category}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg"
-                whileHover={{ y: -5 }}
-              >
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  {category}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {items.map((skill) => (
-                    <motion.span
-                      key={skill}
-                      className="px-3 py-1 bg-accent-light dark:bg-accent-dark text-primary-light dark:text-secondary-teal text-sm rounded-full"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      {skill}
-                    </motion.span>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </motion.section>
