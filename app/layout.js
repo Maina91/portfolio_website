@@ -17,7 +17,11 @@ const inter = Inter({
 export { metadata };
 
 export const viewport = {
-  viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  minimumScale: 1,
+  viewportFit: 'cover',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
     { media: '(prefers-color-scheme: dark)', color: '#0f172a' }
@@ -29,7 +33,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${poppins.variable} ${inter.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <link rel="icon" href="/favicon.ico" />
         <script
           dangerouslySetInnerHTML={{
