@@ -153,9 +153,6 @@ export default function Home() {
               About Me
             </h2>
             <div className="w-20 h-1 bg-secondary-teal mx-auto mb-6"></div>
-            <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Learn more about my background and expertise
-            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
@@ -321,9 +318,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Tech Stack
             </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Technologies I work with
-            </p>
+            <div className="w-20 h-1 bg-secondary-teal mx-auto mb-6"></div>
           </motion.div>
 
           <motion.div 
@@ -394,6 +389,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Featured Projects
             </h2>
+            <div className="w-20 h-1 bg-secondary-teal mx-auto mb-6"></div>
           </motion.div>
 
           {/* Horizontal carousel container */}
